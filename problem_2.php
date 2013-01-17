@@ -1,5 +1,6 @@
 <?php
-	function fibonacci($n)
+
+function fibonacci($n)
 {
     $sq5 = sqrt(5);
     $a = (1 + $sq5) / 2;
@@ -8,13 +9,9 @@
 }
 
 for ($n = 1; $n <= 100; $n++) {
-		if (fibonacci($n) < 4000000) {
-			if (fibonacci($n)%2 == 0) {
-				$sum+=fibonacci($n);
-			}
-			
-		}
-    else  {
+		if (fibonacci($n) < 4000000 || fibonacci($n)%2 == 0) {
+				$sum+=fibonacci($n);			
+		} else  {
     	break;
     }
 }
