@@ -9,7 +9,7 @@ function fibonacci($n)
 }
 
 for ($n = 1; $n <= 100; $n++) {
-		if (fibonacci($n) < 4000000 || fibonacci($n)%2 == 0) {
+		if (fibonacci($n) < 4000000 && fibonacci($n)%2 == 0) {
 				$sum+=fibonacci($n);			
 		} else  {
     	break;
